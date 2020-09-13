@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/semantics.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -116,4 +117,48 @@ class SliderView extends StatelessWidget {
       ),
     );
   }
+}
+
+class Clipss extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+      body: new Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: new Center(
+          child: new ClipPath(
+            child: new Image.network(src),
+            clipper: new MyClipper(),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class MyClipper extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    var path = new Path();
+    path.lineTo(0.0, size.height - 20);
+
+    var firstEndPoint = new Offset(size.width / 2.25, size.height - 30);
+    var firstcontrolpoint = new Offset(size.width / 4, size.height);
+    path.quadraticBezierTo(firstcontrolpoint.dx, firstcontrolpoint.dy,
+        firstEndPoint.dx, firstEndPoint.dy);
+
+    var secondEndPoint = new Offset(size.width, size.height - 40);
+    var secondcontrolpoint =
+        new Offset((size.width) - (size.width / 3.25), size.height - 65);
+    path.quadraticBezierTo(secondcontrolpoint.dx, secondcontrolpoint.dy,
+        secondEndPoint.dx, secondEndPoint.dy);
+
+    path.lineTo(size.width, size.height - 40);
+    path.lineTo(size.width, 0.0);
+    path.close();
+    return path;
+  }
+
+  @override
+  bool shouldReclip(CustomClipper<Path> oldClipper) => false;
 }
