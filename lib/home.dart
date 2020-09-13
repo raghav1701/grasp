@@ -21,7 +21,14 @@ class _HomePageState extends State<HomePage> {
         child: SafeArea(
           child: SingleChildScrollView(
             child: Column(
-              children: <Widget>[SliderView()],
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[Text("Home")],
+                ),
+                SliderView()
+              ],
             ),
           ),
         ),
