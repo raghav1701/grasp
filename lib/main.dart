@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:hack/ear.dart';
+import 'package:hack/eye.dart';
+import 'package:hack/home.dart';
+import 'package:hack/settings.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,7 +24,12 @@ class MyBottomNavigation extends StatefulWidget {
 
 class _MyBottomNavigationState extends State<MyBottomNavigation> {
   int _currentindex = 0;
-  final List<Widget> _children = [];
+  final List<Widget> _children = [
+    HomePage(),
+    Eye(),
+    Ear(),
+    SettingsPage(),
+  ];
 
   void onTappedbar(int index) {
     setState(() {
