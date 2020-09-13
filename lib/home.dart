@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -11,12 +12,19 @@ var Sliderimages = ["images/1.jpg", "images/2.jpg", "images/3.jpg"];
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    var screenHeight = MediaQuery.of(context).size.height;
+    var screenWidth = MediaQuery.of(context).size.width;
     return new Scaffold(
-      appBar: new AppBar(
-        title: new Text("Home Page"),
-      ),
-      body: new Center(
-        child: new Text("Home Page"),
+      body: Container(
+        height: screenHeight,
+        width: screenWidth,
+        child: SafeArea(
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[SliderView()],
+            ),
+          ),
+        ),
       ),
     );
   }
