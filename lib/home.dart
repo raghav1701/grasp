@@ -61,9 +61,23 @@ class SliderView extends StatelessWidget {
           child: Stack(
             fit: StackFit.expand,
             children: <Widget>[
-              Image.asset(
-                Sliderimages[x],
-                fit: BoxFit.cover,
+              Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.black38,
+                          offset: Offset(2.0, 2.0),
+                          blurRadius: 5.0,
+                          spreadRadius: 1.0)
+                    ]),
+              ),
+              ClipRRect(
+                borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                child: Image.asset(
+                  Sliderimages[x],
+                  fit: BoxFit.cover,
+                ),
               )
             ],
           ),
