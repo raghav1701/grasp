@@ -79,6 +79,18 @@ class SliderView extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               )
+
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [Colors.transparent, Colors.black]
+                  )
+                ),
+              )
+
             ],
           ),
         ),
@@ -87,7 +99,7 @@ class SliderView extends StatelessWidget {
     }
     return Container(
       width: screenWidth,
-      height: screenHeight * 9 / 16,
+      height: screenHeight * 5 / 16,
       child: PageView(
         controller: controller,
         scrollDirection: Axis.horizontal,
