@@ -7,7 +7,11 @@ class HomePage extends StatefulWidget {
 }
 
 var Slideritems = ["A", "B", "C"];
-var Sliderimages = ["images/1.jpg", "images/2.jpg", "images/3.jpg"];
+var Sliderimages = [
+  "assets/images/1.jpg",
+  "assets/images/2.jpg",
+  "assets/images/3.jpg"
+];
 
 class _HomePageState extends State<HomePage> {
   @override
@@ -43,19 +47,23 @@ class SliderView extends StatelessWidget {
     var screenHeight = MediaQuery.of(context).size.height;
     var screenWidth = MediaQuery.of(context).size.width;
 
-    PageController controller = PageController(initialPage: 1);
+    PageController controller =
+        PageController(viewportFraction: 0.8, initialPage: 1);
     List<Widget> Sliders = new List<Widget>();
 
     for (int x = 0; x < Slideritems.length; x++) {
-      var Slideview = Container(
-        child: Stack(
-          fit: StackFit.expand,
-          children: <Widget>[
-            Image.asset(
-              Sliderimages[x],
-              fit: BoxFit.cover,
-            )
-          ],
+      var Slideview = Padding(
+        padding: EdgeInsets.all(10),
+        child: Container(
+          child: Stack(
+            fit: StackFit.expand,
+            children: <Widget>[
+              Image.asset(
+                Sliderimages[x],
+                fit: BoxFit.cover,
+              )
+            ],
+          ),
         ),
       );
       Sliders.add(Slideview);
