@@ -1,17 +1,23 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/semantics.dart';
 
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
 }
 
-var Slideritems = ["A", "B", "C"];
+var Slideritems = [
+  "Ear Test",
+  "Eye Test",
+  "Instant Reports",
+  "Quality Tests",
+  "Health Tips"
+];
 var Sliderimages = [
   "assets/images/1.jpg",
   "assets/images/2.jpg",
-  "assets/images/3.jpg"
+  "assets/images/3.jpg",
+  "assets/images/4.jpg",
+  "assets/images/5.jpg"
 ];
 
 class _HomePageState extends State<HomePage> {
@@ -117,48 +123,4 @@ class SliderView extends StatelessWidget {
       ),
     );
   }
-}
-
-class Clipss extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return new Scaffold(
-      body: new Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: new Center(
-          child: new ClipPath(
-            child: new Image.network(src),
-            clipper: new MyClipper(),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class MyClipper extends CustomClipper<Path> {
-  @override
-  Path getClip(Size size) {
-    var path = new Path();
-    path.lineTo(0.0, size.height - 20);
-
-    var firstEndPoint = new Offset(size.width / 2.25, size.height - 30);
-    var firstcontrolpoint = new Offset(size.width / 4, size.height);
-    path.quadraticBezierTo(firstcontrolpoint.dx, firstcontrolpoint.dy,
-        firstEndPoint.dx, firstEndPoint.dy);
-
-    var secondEndPoint = new Offset(size.width, size.height - 40);
-    var secondcontrolpoint =
-        new Offset((size.width) - (size.width / 3.25), size.height - 65);
-    path.quadraticBezierTo(secondcontrolpoint.dx, secondcontrolpoint.dy,
-        secondEndPoint.dx, secondEndPoint.dy);
-
-    path.lineTo(size.width, size.height - 40);
-    path.lineTo(size.width, 0.0);
-    path.close();
-    return path;
-  }
-
-  @override
-  bool shouldReclip(CustomClipper<Path> oldClipper) => false;
 }
