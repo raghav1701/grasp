@@ -80,7 +80,7 @@ class SliderView extends StatelessWidget {
                     ]),
               ),
               ClipRRect(
-                borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                borderRadius: BorderRadius.all(Radius.circular(21.0)),
                 child: Image.asset(
                   Sliderimages[x],
                   fit: BoxFit.cover,
