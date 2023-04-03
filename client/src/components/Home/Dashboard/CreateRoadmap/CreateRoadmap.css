@@ -1,0 +1,49 @@
+.CreateRoadmap {
+    /* background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 3px grey;
+    display: flex;
+    flex-direction: column;
+    padding: 20px; */
+    position: 'absolute';
+    top: '50%';
+    left: '50%';
+    transform: 'translate(-50%, -50%)';
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 3px grey;
+    padding: 20px;
+    /* p: 4; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.inputs {
+    margin: '20px auto';
+}
+.CreateRoadmap .head label {
+    color: #b4b4b4;
+}
+.box {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 10px 0;
+    max-width: 500px;
+    flex-wrap: wrap;
+}
+/* .box li{
+    padding: 4px;
+    border-radius: 5px;
+    color: #5c5cd7;
+    cursor: pointer;
+    background-color: #5c5cd721;
+    width: 100%;
+    margin: 2px 0;
+}
+.box li:hover{
+    background-color: #5c5cd74b;
+} */

@@ -1,0 +1,108 @@
+.Container {
+    position: sticky;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    height: 100%;
+    z-index: 1;
+    align-items: center;
+    right: 0;
+    top: 0;
+}
+
+.Description {
+    /* width: 350px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 4px grey;
+    border-radius: 10px;
+    min-height: 30vh;
+    margin-top: 20px; */
+}
+
+.Edit {
+    /* font-size: 10px;
+    float: right;
+    cursor: pointer; */
+}
+
+.Materials {
+    /* display: flex;
+    flex-direction: row;
+    width: 350px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 4px grey;
+    border-radius: 5px;
+    min-height: 15vh;
+    margin-top: 20px; */
+}
+
+.textArea {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 4px grey;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.textArea:focus {
+    outline: none;
+}
+
+.Button {
+    margin-top: 40px !important;
+    border-radius: 20px !important;
+}
+.addGoals {
+    border-radius: 50px;
+    border: 1px solid grey;
+    padding: 0 10px;
+    background: white;
+    margin-top: 20px;
+}
+.addGoals input {
+    width: 100px;
+    padding: 5px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: rgb(204, 204, 204);
+}
+.boxbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+.parent {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+}
+/* @media screen and (max-width: 400px) {
+    .Container {
+        width: 100%;
+    }
+    .Description {
+        width: 100%;
+    }
+    .Materials {
+        width: 100%;
+    }
+    .textArea {
+        width: 100%;
+    }
+} */

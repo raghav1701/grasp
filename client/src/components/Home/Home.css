@@ -1,0 +1,9 @@
+.Home {
+    display: flex;
+    flex-direction: column;
+}
+.Box {
+    position: relative;
+    padding: 50px;
+    height: 90vh;
+}

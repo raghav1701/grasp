@@ -1,0 +1,96 @@
+.Container {
+    display: flex;
+    flex-direction: row;
+}
+.Calendar {
+    width: 350px;
+    max-width: 100%;
+}
+.Profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 0 0 4px grey;
+    border-radius: 10px;
+    padding: 10px;
+}
+.fieldContainer {
+    width: 100%;
+    /* border-bottom: 1px solid grey; */
+    margin: 1rem auto;
+}
+.info {
+    width: 100%;
+}
+.formgroup {
+    margin: '2rem auto';
+}
+.Profile .image {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+}
+.RoadMapSection {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 4px grey;
+}
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.roadmaps {
+    display: flex;
+    flex-flow: column;
+    margin-top: 10px;
+}
+.addGoals {
+    width: fit-content;
+    border-radius: 50px;
+    border: 1px solid grey;
+    padding: 0 10px;
+    margin-bottom: 1em;
+}
+.addGoals input {
+    width: 100px;
+    padding: 5px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: rgb(204, 204, 204);
+}
+.CR_Modal {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #404040a3;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+}
+.Backdrop {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+@media (max-width: 908px) {
+    .Container {
+        flex-direction: column;
+    }
+    .Calendar {
+        width: 100%;
+    }
+    .Profile {
+        width: 100%;
+    }
+}

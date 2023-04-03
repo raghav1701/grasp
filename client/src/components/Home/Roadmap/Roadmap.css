@@ -1,0 +1,158 @@
+.Roadmap {
+    border-radius: 5px;
+    width: 90%;
+    padding: 30px;
+    height: 100%;
+}
+.Info {
+    padding: 30px;
+}
+.Info h3 {
+    font-size: 2rem;
+}
+.Sec {
+    margin: 10px 0;
+}
+.Sec label {
+    font-size: 0.7rem;
+    color: #a7a7a7;
+}
+.Sec p {
+    color: #404040;
+}
+.Sec ul {
+    display: flex;
+    list-style: none;
+}
+.Sec ul li {
+    margin-right: 5px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 2px;
+}
+.Main {
+    padding: 30px;
+    border-radius: 5px;
+    background: #9ccca5;
+    overflow-y: scroll;
+    transition: 0.3s;
+}
+.Topics {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+.StartDiv {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+.path {
+    width: 4px;
+    height: 100px;
+    background-color: white;
+    margin-left: 40px;
+}
+.Topics .title {
+    margin: 10px 0;
+}
+.Box {
+    border-top: 1px solid #c1c1c1;
+    padding-top: 20px;
+    overflow-x: scroll;
+}
+.Notes {
+    max-height: 300px;
+    background-color: white;
+    overflow-y: scroll;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #c4c4c4;
+    text-align: center;
+}
+.Notes p {
+    font-size: 0.8rem;
+}
+
+/* // ----------Create Modal----------  */
+.Modal {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #404040a3;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+}
+.Backdrop {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.CreateModal {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 3px grey;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.CreateModal .head label {
+    color: #b4b4b4;
+}
+.CreateModal .head p {
+    color: black;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+}
+.box li {
+    padding: 4px;
+    border-radius: 5px;
+    color: #5c5cd7;
+    cursor: pointer;
+    background-color: #5c5cd721;
+    width: 100%;
+    margin: 2px 0;
+}
+.box li:hover {
+    background-color: #5c5cd74b;
+}
+
+/* // ----------Notes Modal----------  */
+.NotesModal {
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #424242;
+}
+.head {
+    font-size: 1.5rem;
+}
+.content {
+    padding: 20px 0;
+    border-top: 1px solid grey;
+}
+
+.CreateNoteModal {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 3px grey;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 20px;
+}
+.CreateNoteModal .head label {
+    color: #b4b4b4;
+}

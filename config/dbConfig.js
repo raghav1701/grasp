@@ -12,7 +12,7 @@ mongoose.connection.on('open', () => {
 
 const config = () => {
     const db = mongoose.connect(
-        `mongodb+srv://Sarthak:${process.env.DB_PASS}@cluster0.0l2ty.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+        `mongodb+srv://Sarthak:${process.env.DB_PASS}@cluster0.0l2ty.mongodb.net/myFirstDatabase?retryWrites=true&w=majority` //uri
     );
     return db;
 };

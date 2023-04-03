@@ -1,0 +1,98 @@
+.MainCalendar{
+    font-family: Raleway;
+    padding: 15px;
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 4px grey;
+    margin: 10px 0;
+}
+.controller{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.skip{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.skip i{
+    color: #707384;
+    font-size: 2rem;
+}
+.skip i:hover{
+    color: rgb(31, 31, 31);
+}
+.type{
+    font-size: 1rem;
+    box-shadow: 0 0 4px #d3d3d3;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.dayPart{
+    overflow: hidden;
+}
+.dayPart ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+}
+.dayPart ul li{
+    display: block;
+    width: 70px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #1976d2;
+    font-weight: 600;
+}
+.dateValue{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    animation: dateTrasition 0.1s ease-in backwards;
+}
+
+.monthValue{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    animation: monthTrasition 0.1s ease-in backwards;
+}
+
+.yearValue{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    animation: yearValue 0.1s ease-in backwards;
+}
+
+@keyframes yearValue{
+    0%{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes monthTrasition{
+    0%{
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes dateTrasition{
+    0%{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
