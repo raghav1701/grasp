@@ -17,7 +17,7 @@ function encrypt(text, depth) {
             flag2 = false;
         } else if (j == rows - 1) {
             flag2 = true;
-            flag1 = false;
+        
         }
         if (flag1 == true && flag2 == false) j++;
         else if (flag1 == false && flag2 == true) j--;
