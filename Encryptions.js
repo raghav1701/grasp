@@ -4,6 +4,7 @@ function encrypt(text, depth) {
     var encryptedtext = '';
     var rows = depth;
     var columns = len;
+    
     var k = 0;
     var flag1 = false;
     var flag2 = false;
