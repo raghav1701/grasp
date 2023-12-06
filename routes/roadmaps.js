@@ -12,10 +12,9 @@ router.get('/all/search', roadmapController.searchRoadmap);
 router.post(
     '/create',
     authController.isAuthenticated,
-    roadmapController.createRoadmap
-);
-
-// Get a note by noteID
+    roadmapController.
+    
+    
 router.get(
     '/notes/:noteid',
     authController.isAuthenticated,
